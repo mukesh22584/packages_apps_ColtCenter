@@ -1365,4 +1365,8 @@
     <string name="force_expanded_notifications_title">Force expanded notifications</string>
     <string name="force_expanded_notifications_summary">Force apps that support expanded notifications</string>
 
+    <!-- OnePlus Shit -->
+    <string name="device_part_title">OnePlus Shit</string>
+    <string name="device_part_summary">OnePlus Speicific Features</string>
+
 </resources>
