@@ -57,9 +57,6 @@
   <string name="notifications_summary">Notifications and Incall settings</string>
   <string name="misc_summary">Miscellaneous things to be checked here</string>
 
-  <!-- Device Feature -->
-  <string name="device_part_title">OnePlus Settings</string>
-
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
   <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
@@ -367,4 +364,9 @@
     <!-- CPU info overlay -->
     <string name="show_cpu_title">Show CPU info</string>
     <string name="show_cpu_summary">Screen overlay showing current CPU info</string>
+
+    <!-- OnePlus Shit -->
+    <string name="device_part_title">OnePlus Shit</string>
+    <string name="device_part_summary">OnePlus Speicific Features</string>
+
 </resources>
