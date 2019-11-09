@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import androidx.preference.Preference;
 import androidx.preference.ListPreference;
+import com.colt.settings.utils.Utils;
 
 import com.android.settings.R;
 
@@ -23,7 +24,15 @@ public class GestureSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+	final String KEY_DEVICE_PART = "device_part";
+        final String KEY_DEVICE_PART_PACKAGE_NAME = "org.omnirom.device";
+
         addPreferencesFromResource(R.xml.colt_settings_gestures);
+
+	// DeviceParts
+        if (!Utils.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_PART));
+        }
 
         mTorchLongPressPowerTimeout =
                     (ListPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT);
