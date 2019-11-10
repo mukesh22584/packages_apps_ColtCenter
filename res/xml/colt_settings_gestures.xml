@@ -66,15 +66,16 @@
             android:summary="@string/double_tap_to_sleep_lockscreen_summary"
             android:defaultValue="true" />
 
-    <!-- Device Part -->
+    </PreferenceCategory>
+ 
+   <!-- Device Part -->
         <Preference
             android:key="device_part"
             android:persistent="false"
-            android:title="@string/device_part_title"
+            android:title="@string/device_part_title">
             <intent android:action="android.intent.action.MAIN"
                  android:targetPackage="org.omnirom.device"
                  android:targetClass="org.omnirom.device.DeviceSettings"/>
         </Preference>
 
-    </PreferenceCategory>
 </PreferenceScreen>
