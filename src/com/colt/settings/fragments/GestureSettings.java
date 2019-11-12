@@ -24,12 +24,12 @@ public class GestureSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-	final String KEY_DEVICE_PART = "device_part";
-        final String KEY_DEVICE_PART_PACKAGE_NAME = "org.omnirom.device";
+	final String KEY_DEVICE_PART = "oneplus_shit";
+        final String KEY_DEVICE_PART_PACKAGE_NAME = "com.oneplus.shit.settings";
 
         addPreferencesFromResource(R.xml.colt_settings_gestures);
 
-	// DeviceParts
+	// OnePlus Shit
         if (!Utils.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
             getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_PART));
         }
