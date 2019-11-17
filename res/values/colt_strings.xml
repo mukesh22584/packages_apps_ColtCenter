@@ -543,4 +543,7 @@
     <string name="notification_guts_kill_app_button_title">Kill app button</string>
     <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
 
+    <!-- Custom Doze -->
+    <string name="ambient_display_custom_title">Ambient Display</string>
+
 </resources>
